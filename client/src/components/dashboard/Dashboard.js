@@ -18,9 +18,9 @@ class Dashboard extends Component {
           <div className="landing-copy col s12 center-align">
             <h4>
               <b>Hey there,</b> {user.name.split(" ")[0]}
-              <p className="flow-text grey-text text-darken-1">
-                You are logged into a full-stack{" "}
-                <span style={{ fontFamily: "monospace" }}>MERN</span> app 👏
+              <p className="flow-text black-text text-darken-1">
+                You are logged in
+                <span style={{ fontFamily: "monospace" }}></span>
               </p>
             </h4>
             <button
@@ -31,12 +31,16 @@ class Dashboard extends Component {
                 marginTop: "1rem"
               }}
               onClick={this.onLogoutClick}
-              className="btn btn-large waves-effect waves-light hoverable blue accent-3"
+              className="btn btn-large waves-effect waves-light hoverable #f44336 accent-3"
             >
               Logout
             </button>
+            
           </div>
         </div>
+        <div>
+              <img src="val.png" style={{width:"200px",height:"300px"}}></img>
+            </div>
       </div>
     );
   }
